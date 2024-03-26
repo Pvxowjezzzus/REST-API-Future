@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/images/main-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: Tahoma;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+b {
+    font-weight: 100;
+}
+
+.mt-5 {
+    margin-top: 25px;
+}
+
+.container {
+    padding: 10% 20%;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+}
+
+.flex-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content {
+    margin-top: 5%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.input-block {
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.input-block label {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.input-block:last-child {
+    margin-top: 10px;
+}
+
+.required-input {
+    color: #830000;
+}
+
+.input,
+.submit-input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: 1px #b1b1b1 solid;
+    border-radius: 3px;
+}
+
+.text-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-part p {
+    color: rgb(254, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.input[type='text'],
+.input[type='email'],
+.input[type='date'] {
+    padding: 7px;
+    font-size: 13px;
+}
+
+.upload-photo__wrapper {
+    margin-bottom: 20px;
+}
+
+.selected_filename {
+    color: #b1b1b1;
+    margin-left: 10px;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.upload-photo__input {
+    display: none;
+}
+
+.upload-photo__label {
+    font-family: Verdana;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.upload-photo__label:hover {
+    color: #0f6442;
+}
+
+.submit-input[type='submit'] {
+    border: 1px #b1b1b1 solid;
+    font-family: Verdana;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit-input[type='submit']:hover {
+    background: #b1b1b1;
+}
+
+.required-tip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.input:focus-visible {
+    border: 1px #373737 solid;
+    outline: none;
+}
+
+.empty-notes {
+    text-align: center;
+    font-family: Verdana;
+    color: #fff;
+}
+
+.table {
+    display: table;
+    width: 95vw;
+    margin: auto;
+    padding: 0;
+    border-collapse: collapse;
+    line-height: 20px;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+.users-table {
+    margin: 0;
+    width: 100% !important;
+}
+
+.table th {
+    letter-spacing: 1px;
+    background-color: #b1b1b1;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.table td {
+    border-bottom: 1px solid #ededed !important;
+    font-size: 13px;
+    word-break: break-word;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.table tr {
+    transition: all .3s;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+.table tr:hover {
+    background: #b1b1b1;
+}
+
+.note-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+.note-link:visited {
+    color: #b1b1b1;
+}
+
+.links {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.to-main {
+    margin-left: 25px;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.link:last-child {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.to-all {
+    margin-bottom: 25px;
+}
+
+.note-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.note-block p {
+    font-family: Montserrat;
+    margin-bottom: 10px;
+}
+
+.photo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    .photo {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .input-block {
+        width: 70%;
+    }
+    .table {
+        border: 0 !important;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tbody {
+        display: block;
+        margin: 10px;
+    }
+    .table tr {
+        display: block;
+        border: 1px solid #ededed !important;
+    }
+    .table td {
+        display: block;
+        font-size: 13px;
+        border-bottom: 1px dotted #ededed !important;
+        text-align: right;
+    }
+    .table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    .photo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
